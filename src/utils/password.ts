@@ -1,0 +1,17 @@
+import bcrypt from 'bcryptjs';
+import { config } from '../config';
+
+/**
+ * Hash a plain text password
+ */
+export async function hashPassword(password: string): Promise<string> {
+  return bcrypt.hash(password, config.bcrypt.saltRounds);
+}
+
+/**
+ * Compare a plain text password with a hashed password
+ */
+export async function verifyPassword(password: string, hashedPassword: string): Promise<boolean> {
+  return bcrypt.compare(password, hashedPassword);
+}
+
