@@ -40,7 +40,19 @@ export function getOpenApiDocument(): OpenAPIV3.Document {
       description: `
 # University Events Management System API
 
-A centralized platform for managing university events. This API provides endpoints for:
+A centralized platform for managing university events. 
+This API is built with HonoJS, Drizzle ORM, and Neon PostgreSQL.
+
+### Tech Stack
+
+- **Runtime**: Bun
+- **Framework**: HonoJS
+- **Database**: PostgreSQL (Neon Serverless)
+- **ORM**: Drizzle ORM
+- **Validation**: Zod
+- **Authentication**: JWT (JSON Web Tokens)
+
+### Endpoints
 
 - **Authentication** - User registration, login, and token management
 - **Users** - Profile management and user administration
@@ -50,7 +62,7 @@ A centralized platform for managing university events. This API provides endpoin
 - **Notifications** - User notification management
 - **Files** - Event materials upload and download
 
-## Authentication
+### Authentication
 
 Most endpoints require authentication via JWT Bearer token. Include the token in the Authorization header:
 
@@ -58,7 +70,7 @@ Most endpoints require authentication via JWT Bearer token. Include the token in
 Authorization: Bearer <your_access_token>
 \`\`\`
 
-## User Roles
+### User Roles
 
 | Role | Description |
 |------|-------------|
@@ -67,8 +79,8 @@ Authorization: Bearer <your_access_token>
 | \`admin\` | Full system access |
     `,
       contact: {
-        name: 'USV Events Team',
-        email: 'events@usv.ro',
+        name: 'USV Events Team DEVELOPER',
+        email: 'liviujmk@gmail.com',
       },
     },
     servers: getServers(),

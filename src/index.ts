@@ -49,7 +49,7 @@ app.get('/openapi.json', (c) => {
 });
 
 // Swagger UI
-app.get('/docs', swaggerUI({ url: '/openapi.json' }));
+app.get('/docs', swaggerUI({ url: '/openapi.json', title: 'USV Events API', }));
 
 // API Routes - v1
 const v1 = new Hono<Env>();

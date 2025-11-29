@@ -1,10 +1,12 @@
 # USV Events - University Events Management System API
 
-A centralized platform for managing university events, built with HonoJS, Drizzle ORM, and Neon PostgreSQL.
+A centralized platform for managing university events, built with HonoJS, Drizzle ORM, and Neon PostgreSQL. Built by [@liviujmk](https://github.com/liviujmk) along with TechnoData IP TEAM
+
 
 ## Overview
 
 USV Events provides a unified platform where university events can be created, managed, and promoted. Students can discover, save, and register for events easily.
+Public docs available at: [USV Events API](https://usv-events-be.vercel.app/docs)
 
 ## Tech Stack
 
